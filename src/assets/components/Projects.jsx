@@ -1,5 +1,9 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import weatherAppImg from '../images/weather-app.jpeg';
+// import ticTacToeImg from '../images/tic-tac-toe.png';
+import recipeFinderImg from '../images/recipe-finder.jpg';
+
 import '../styles/Projects.css';
 
 function Projects() {
@@ -7,7 +11,7 @@ function Projects() {
     {
       title: 'Weather App',
       description: 'A simple weather app using OpenWeatherMap API.',
-      image: '/images/weather-app.png',
+      image: weatherAppImg,
       // demoLink: 'https://your-demo-link.com',
       codeLink: 'https://github.com/Bahati019/App.git'
     },
@@ -15,6 +19,13 @@ function Projects() {
       title: 'Tic Tac Toe',
       description: 'A React-based Tic Tac Toe game with clean UI.',
       image: '/images/tic-tac-toe.png',
+      // demoLink: 'https://your-demo-link.com',
+      codeLink: 'https://github.com/Bahati019/Recipe-Finder.git'
+    },
+        {
+      title: 'Recipe-Finder',
+      description: 'A TypeScript React Native app that lets users find recipes based on ingredients.',
+      image: recipeFinderImg,
       // demoLink: 'https://your-demo-link.com',
       codeLink: 'https://github.com/your-repo-link'
     }
