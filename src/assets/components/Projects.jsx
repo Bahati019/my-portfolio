@@ -20,14 +20,14 @@ function Projects() {
       description: 'A React-based Tic Tac Toe game with clean UI.',
       image: '/images/tic-tac-toe.png',
       // demoLink: 'https://your-demo-link.com',
-      codeLink: 'https://github.com/Bahati019/Recipe-Finder.git'
+      codeLink: 'https://github.com/your-repo-link'
     },
         {
       title: 'Recipe-Finder',
       description: 'A TypeScript React Native app that lets users find recipes based on ingredients.',
       image: recipeFinderImg,
       // demoLink: 'https://your-demo-link.com',
-      codeLink: 'https://github.com/your-repo-link'
+      codeLink: 'https://github.com/Bahati019/Recipe-Finder.git'
     }
   ];
 
