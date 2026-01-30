@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import weatherAppImg from '../images/weather-app.jpeg';
+import weatherAppImg from '../Images/weather-app.jpeg';
 // import ticTacToeImg from '../images/tic-tac-toe.png';
-import recipeFinderImg from '../images/recipe-finder.jpg';
+import recipeFinderImg from '../Images/recipe-finder.jpg';
 
 import '../styles/Projects.css';
 

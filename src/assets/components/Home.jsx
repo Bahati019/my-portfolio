@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload } from 'react-icons/fa';
-import profileImage from '../images/profile.jpg'; 
+import profileImage from '../Images/profile.jpg'; 
 import '../styles/Home.css'; 
 
 function Home() {
