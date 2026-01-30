@@ -1,59 +1,79 @@
 .footer {
-  background-color: #1a1a1a;
-  color: #f0f0f0;
+  background: var(--bg-secondary);
+  padding: 40px 20px;
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
+  margin-top: auto;
+  border-top: 1px solid var(--glass-border);
+  position: relative;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .social-icons a {
-  /* color: #f0f0f0; */
-  margin: 0 0.5rem;
-  font-size: 1.8rem;
-  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
+  color: white;
+  transform: translateY(-3px);
+  background: var(--accent-color);
 }
 
-.footer-text {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-/* Social icon brand colors */
-.social-icons .github {
-  color: #fff; /* GitHub is usually white or dark */
-}
-
-.social-icons .linkedin {
-  color: #0077b5;
-}
-
-.social-icons .twitter {
-  color: #1da1f2;
-}
 .scroll-to-top {
-  background-color: transparent;
-  border: 2px solid #f0f0f0;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  color: #f0f0f0;
+  transition: all 0.3s ease;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .scroll-to-top:hover {
-  background-color: #f0f0f0;
-  color: #1a1a1a;
-  transform: scale(1.1);
+  background: #2563eb;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    top: auto;
+    transform: none;
+    z-index: 90;
+  }
+
+  .scroll-to-top:hover {
+    transform: scale(1.1);
+  }
 }

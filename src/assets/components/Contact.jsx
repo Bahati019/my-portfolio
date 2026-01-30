@@ -30,36 +30,49 @@ function Contact() {
       <h2 className="section-title">Contact</h2>
       <p className="contact-text">I'm currently open to freelance projects, collaborations, or full-time roles. Feel free to reach out!</p>
 
-      <form onSubmit={handleSubmit} className="contact-form">
+      <motion.form
+        onSubmit={handleSubmit}
+        className="contact-form"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         <input type="text" name="_honey" style={{ display: 'none' }} />
 
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <motion.button
+          type="submit"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          Send Message
+        </motion.button>
 
         {status === 'SUCCESS' && (
-            <motion.p
-                className='success-message'
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-            >
-                ✅ Thanks! Your message has been sent.
-            </motion.p>
+          <motion.p
+            className='success-message'
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            transition={{ duration: 0.3 }}
+          >
+            ✅ Thanks! Your message has been sent.
+          </motion.p>
         )}
         {status === 'ERROR' && (
-            <motion.p
-                className="error-message"
-                initial={{ x: 0 }}
-                animate={{ x: [0, -10, 10, -10, 10, 0] }}
-                transition={{ duration: 0.6 }}
-            >
-                ❌ Oops! Something went wrong. Please try again.
-            </motion.p>
+          <motion.p
+            className="error-message"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            transition={{ duration: 0.3 }}
+          >
+            ❌ Oops! Something went wrong. Please try again.
+          </motion.p>
         )}
-      </form>
+      </motion.form>
     </section>
   );
 }

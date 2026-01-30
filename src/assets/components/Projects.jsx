@@ -22,7 +22,7 @@ function Projects() {
       // demoLink: 'https://your-demo-link.com',
       codeLink: 'https://github.com/your-repo-link'
     },
-        {
+    {
       title: 'Recipe-Finder',
       description: 'A TypeScript React Native app that lets users find recipes based on ingredients.',
       image: recipeFinderImg,
@@ -38,15 +38,17 @@ function Projects() {
         {projectList.map((project, index) => (
           <div className="project-card" key={index}>
             <img src={project.image} alt={project.title} className="project-image" />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="project-links">
-              {/* <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt className="icon" /> Live Demo
-              </a> */}
-              <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="icon" /> Source Code
-              </a>
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-links">
+                {/* <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                  <FaExternalLinkAlt className="icon" /> Live Demo
+                </a> */}
+                <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="icon" /> Source Code
+                </a>
+              </div>
             </div>
           </div>
         ))}

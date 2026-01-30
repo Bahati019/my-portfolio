@@ -21,20 +21,20 @@ function Skills() {
   return (
     <section id="skills" className="skills-section">
       <div className='skills-container'>
-        <motion.h2 
-        className="section-title"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeInUp}
-      >
-        Skills
-      </motion.h2>
+        <motion.h2
+          className="section-title"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          Skills
+        </motion.h2>
       </div>
 
 
       {/* Frontend */}
-      <motion.div 
+      <motion.div
         className="skills-category"
         initial="hidden"
         whileInView="visible"
@@ -53,7 +53,7 @@ function Skills() {
       </motion.div>
 
       {/* Backend */}
-      <motion.div 
+      <motion.div
         className="skills-category"
         initial="hidden"
         whileInView="visible"
@@ -69,7 +69,7 @@ function Skills() {
       </motion.div>
 
       {/* Tools */}
-      <motion.div 
+      <motion.div
         className="skills-category"
         initial="hidden"
         whileInView="visible"
@@ -89,10 +89,13 @@ function Skills() {
 // SkillCard Component
 function SkillCard({ icon, label, color }) {
   return (
-    <motion.div 
+    <motion.div
       className="skill-card"
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ y: -5 }}
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
       transition={{ type: 'spring', stiffness: 300 }}
+      viewport={{ once: true }}
     >
       <div className="skill-icon" style={{ color }}>
         {icon}
