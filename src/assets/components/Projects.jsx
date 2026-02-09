@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import weatherAppImg from '../Images/weather-app.jpeg';
-// import ticTacToeImg from '../images/tic-tac-toe.png';
+import klissCosmeticsImg from '../Images/kliss-cosmetics.png';
 import recipeFinderImg from '../Images/recipe-finder.jpg';
 
 import '../styles/Projects.css';
@@ -16,11 +16,11 @@ function Projects() {
       codeLink: 'https://github.com/Bahati019/App.git'
     },
     {
-      title: 'Tic Tac Toe',
+      title: 'Kliss-cosmetics',
       description: 'A React-based Tic Tac Toe game with clean UI.',
-      image: '/images/tic-tac-toe.png',
+      image: klissCosmeticsImg,
       // demoLink: 'https://your-demo-link.com',
-      codeLink: 'https://github.com/your-repo-link'
+      codeLink: 'https://github.com/Bahati019/Kliss-cosmetics.git'
     },
     {
       title: 'Recipe-Finder',
