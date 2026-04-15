@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaDownload } from 'react-icons/fa';
+import { FaDownload, FaEye } from 'react-icons/fa';
 import profileImage from '../Images/profile.jpg';
 
 function Home() {
   return (
     <section id="home" className="min-h-screen flex justify-center items-center relative overflow-hidden pt-20">
       {/* Background Blobs */}
-      <div className="absolute -top-[20%] -left-[10%] w-[50vw] h-[50vw] bg-[radial-gradient(circle,rgba(59,130,246,0.2)_0%,rgba(15,23,42,0)_70%)] rounded-full blur-[80px] z-0 animate-blobFloat pointer-events-none"></div>
-      <div className="absolute -bottom-[10%] -right-[10%] w-[40vw] h-[40vw] bg-[radial-gradient(circle,rgba(139,92,246,0.2)_0%,rgba(15,23,42,0)_70%)] rounded-full blur-[80px] z-0 animate-blobFloat animation-delay-2000 pointer-events-none"></div>
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[radial-gradient(circle,rgba(59,130,246,0.2)_0%,rgba(15,23,42,0)_70%)] rounded-full blur-[80px] z-0 animate-blobFloat pointer-events-none"></div>
+      <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-[radial-gradient(circle,rgba(139,92,246,0.2)_0%,rgba(15,23,42,0)_70%)] rounded-full blur-[80px] z-0 animate-blobFloat animation-delay-2000 pointer-events-none"></div>
 
       <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-16 w-full max-w-[1000px] px-5">
         <motion.div
@@ -25,16 +25,30 @@ function Home() {
             I specialize in building responsive, accessible, and performant web applications using modern technologies like React, Tailwind CSS, and Framer Motion.
           </p>
 
-          <motion.a
-            href="/CV.pdf"
-            download
-            className="inline-flex items-center gap-3 py-3.5 px-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full font-semibold shadow-lg shadow-blue-500/40 text-base transition-all hover:bg-gradient-to-br hover:from-blue-600 hover:to-blue-700 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-500/60"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <FaDownload className="text-lg" />
-            Download CV
-          </motion.a>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <motion.a
+              href="/CV.pdf"
+              download
+              className="inline-flex items-center gap-3 py-3.5 px-8 border-2 border-blue-500/50 text-blue-400 rounded-full font-semibold text-base transition-all hover:bg-blue-500/10 hover:-translate-y-0.5 hover:border-blue-500 hover:text-blue-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaDownload className="text-lg" />
+              Download CV
+            </motion.a>
+
+            <motion.a
+              href="/CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 py-3.5 px-8 border-2 border-blue-500/50 text-blue-400 rounded-full font-semibold text-base transition-all hover:bg-blue-500/10 hover:-translate-y-0.5 hover:border-blue-500 hover:text-blue-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaEye className="text-lg" />
+              View CV
+            </motion.a>
+          </div>
         </motion.div>
 
         <motion.div

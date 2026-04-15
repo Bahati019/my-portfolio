@@ -51,9 +51,9 @@ function About() {
             icon: FaCode,
         },
         {
-            year: '2022 - 2023',
-            title: 'Computer Science Studies',
-            company: 'University / Bootcamp',
+            year: '2019 - 2023',
+            title: 'Bachelor of Science in Computer Science',
+            company: 'Maasai Mara University',
             description: 'Studied fundamentals of computer science, algorithms, data structures, and web development. Built strong foundation in programming principles.',
             icon: FaGraduationCap,
         },

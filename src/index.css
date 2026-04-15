@@ -2,6 +2,13 @@
 
 
 @layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   :root {
     /* Dark Theme Palette */
     --bg-color: #0f172a;
@@ -24,6 +31,7 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-main);
+    overflow-x: hidden;
   }
 
   body {
@@ -78,10 +86,13 @@
   /* Section Defaults */
   .section-container {
     @apply w-full py-20 px-5 max-w-[1200px] mx-auto relative;
+    box-sizing: border-box;
   }
 
   .section-title {
-    @apply text-center text-4xl mb-12 relative inline-block left-1/2 -translate-x-1/2 font-semibold;
+    @apply text-center text-4xl mb-12 font-semibold;
+    display: block;
+    width: 100%;
   }
 
   .section-title::after {
