@@ -10,7 +10,7 @@ function Footer() {
     <footer className="bg-slate-800 py-10 px-5 text-center mt-auto border-t border-white/10 relative">
       <div className="flex justify-center gap-8 mb-8">
         <a
-          href="https://github.com/dashboard"
+          href="https://github.com/Bahati019"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Github"
