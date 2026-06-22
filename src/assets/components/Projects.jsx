@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaSearch } from 'react-icons/fa';
 import weatherAppImg from '../Images/weather-app.jpeg';
 import klissCosmeticsImg from '../Images/kliss-cosmetics.png';
-import recipeFinderImg from '../Images/recipe-finder.jpg';
+import recipeFinderImg from '../Images/recipe-finder.jpeg';
 
 function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
@@ -29,6 +29,7 @@ function Projects() {
       title: 'Recipe-Finder',
       description: 'A cross-platform mobile application allowing users to discover recipes based on available ingredients, built with React Native and TypeScript.',
       image: recipeFinderImg,
+      demoLink: 'https://expo.dev/accounts/bahati019/projects/recipe-finder/builds/6b6c56e0-1222-437a-bbbb-61ebb246a274',
       codeLink: 'https://github.com/Bahati019/Recipe-Finder.git',
       technologies: ['React Native', 'TypeScript', 'Mobile']
     }
@@ -79,8 +80,8 @@ function Projects() {
               key={tech}
               onClick={() => setSelectedFilter(tech)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedFilter === tech
-                  ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/50'
-                  : 'bg-slate-800/50 text-slate-300 border border-slate-700/50 hover:border-blue-500/50 hover:text-blue-400'
+                ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/50'
+                : 'bg-slate-800/50 text-slate-300 border border-slate-700/50 hover:border-blue-500/50 hover:text-blue-400'
                 }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
