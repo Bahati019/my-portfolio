@@ -4,6 +4,7 @@ import { FaGithub, FaExternalLinkAlt, FaSearch } from 'react-icons/fa';
 import weatherAppImg from '../Images/weather-app.jpeg';
 import klissCosmeticsImg from '../Images/kliss-cosmetics.png';
 import recipeFinderImg from '../Images/recipe-finder.jpeg';
+import hrManagementImg from '../Images/hr-management-system.jpeg';
 
 function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
@@ -32,6 +33,14 @@ function Projects() {
       demoLink: 'https://expo.dev/accounts/bahati019/projects/recipe-finder/builds/6b6c56e0-1222-437a-bbbb-61ebb246a274',
       codeLink: 'https://github.com/Bahati019/Recipe-Finder.git',
       technologies: ['React Native', 'TypeScript', 'Mobile']
+    },
+    {
+      title: 'HR Management System',
+      description: 'A comprehensive web application for managing human resources, including employee records and administrative tasks.',
+      image: hrManagementImg,
+      demoLink: 'https://hr-client-qgyu.onrender.com/dashboard',
+      codeLink: 'https://github.com/Bahati019/hr-management-system.git',
+      technologies: ['React', 'Management', 'Full Stack']
     }
   ];
 
