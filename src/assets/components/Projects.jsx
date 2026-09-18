@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaSearch } from 'react-icons/fa';
 import weatherAppImg from '../Images/weather-app.jpeg';
-import klissCosmeticsImg from '../Images/kliss-cosmetics.png';
+import klissCosmeticsImg from '../Images/kliss-cosmetics.jpeg';
 import recipeFinderImg from '../Images/recipe-finder.jpeg';
 import hrManagementImg from '../Images/hr-management-system.jpeg';
 
