@@ -5,6 +5,7 @@ import weatherAppImg from '../Images/weather-app.jpeg';
 import klissCosmeticsImg from '../Images/kliss-cosmetics.jpeg';
 import recipeFinderImg from '../Images/recipe-finder.jpeg';
 import hrManagementImg from '../Images/hr-management-system.jpeg';
+import expenesTrackerImg from '../Images/expensestracker-app.jpeg';
 
 function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
@@ -40,6 +41,14 @@ function Projects() {
       image: hrManagementImg,
       demoLink: 'https://hr-client-qgyu.onrender.com/dashboard',
       codeLink: 'https://github.com/Bahati019/hr-management-system.git',
+      technologies: ['React', 'Management', 'Full Stack'],
+    },
+    {
+      title: 'Expense Tracker',
+      description: 'A comprehensive web application to manage daily expenses, including income, expenses, and financial reports.',
+      image: expenesTrackerImg,
+      // demoLink: 'https://hr-client-qgyu.onrender.com/dashboard',
+      codeLink: 'https://github.com/Bahati019/ExpenseTracker.git',
       technologies: ['React', 'Management', 'Full Stack']
     }
   ];
